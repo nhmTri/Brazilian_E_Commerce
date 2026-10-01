@@ -1,0 +1,31 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# notebooks
+.ipynb_checkpoints/
+
+# spark / delta local runs
+spark-warehouse/
+metastore_db/
+derby.log
+checkpoint/
+
+# data: the Olist CSVs come from Kaggle, they do not belong in git
+*.csv
+*.parquet
+data/
+!assets/*.svg
+
+# editors and os
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# secrets
+.env
+*.pem
+credentials*.json
